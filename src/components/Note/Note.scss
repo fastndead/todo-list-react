@@ -1,0 +1,59 @@
+.note-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &:hover > .note-container > * {
+        opacity: 1;
+    }
+}
+
+.note-container {
+    width: 500px;
+    min-height: 100px;
+    background-color: white;
+    border-radius: 27px;
+    padding: 21px 51px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    position: relative;
+}
+
+.note-text {
+    color: #34495E;
+    outline: none;
+}
+
+.note-mark, .note-delete {
+    opacity: 0;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: -50px;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: solid 3px rgba(255, 0, 0, 0.397) ;
+    outline: none;
+    cursor: pointer;
+    transition: ease 0.3s;
+
+    &_marked {
+        background-color: rgba(255, 0, 0, 0.397);
+    }
+}
+
+.note-delete {
+    color: rgba(255, 0, 0, 0.397);
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    height: 30px;
+    left: calc(100% + 15px);
+}

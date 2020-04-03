@@ -1,0 +1,81 @@
+.note-form {
+    margin: 0;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__heading {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 87px;
+        color: #34495E;
+    }
+
+    &__input {
+        font-family: inherit;
+        font-size: inherit;
+        outline: none;
+        resize: unset;
+        border: none;
+        background-color: #34495E;
+        color: white;
+        white-space: pre-wrap;
+        width: 100%;
+        height: 200px;
+        border-radius: 27px;
+        padding: 21px 51px;
+        box-sizing: border-box;
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    &__button-container {
+        height: 55px;
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 19px;
+        background-color: transparent;
+        outline: none;
+        width: 200px;
+        height: 55px;
+        color: #34495E;
+        border: 2px solid #34495E;
+        box-sizing: border-box;
+        border-radius: 27px;
+        transition: ease 0.5s;
+        & > * {
+            transition: ease 0.5s;
+        }
+
+        &:hover {
+            color: white;
+            background-color: #34495E;
+            
+            & > * {
+                fill: white;
+            }
+        }
+
+        &:active {
+            background-color: transparent;
+        }
+    }
+}

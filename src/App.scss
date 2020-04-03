@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+.app {
+    display: flex;
+    width: 1020px;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Merriweather Sans', sans-serif;
+
+    
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #ECF0F1;
+        min-height: 100vh;
+    }
+}
+
+.header {
+    width: 100%;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 15px;
+    letter-spacing: 0.7px;
+    color: #34495E;
+    text-transform: uppercase;
+}
