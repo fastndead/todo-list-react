@@ -20,6 +20,10 @@
     box-sizing: border-box;
     margin-top: 20px;
     position: relative;
+
+    @media only screen and (max-width: 600px) {
+        width: 340px
+    }
 }
 
 .note-text {
