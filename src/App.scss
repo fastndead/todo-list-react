@@ -27,4 +27,9 @@
     letter-spacing: 0.7px;
     color: #34495E;
     text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 40px;
+    @media only screen and (max-width: 1024px) {
+        text-align: center;
+    }
 }

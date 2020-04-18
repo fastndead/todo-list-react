@@ -8,7 +8,7 @@ const notes = (state = initialState, action) => {
     case 'ADD_NOTE':
       return [
         {
-          id: action.id,
+          id: `${action.id}`,
           text: action.text,
           marked: false,
         },
