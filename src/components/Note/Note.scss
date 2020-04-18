@@ -2,10 +2,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-
-    &:hover > .note-container > * {
-        opacity: 1;
-    }
 }
 
 .note-container {
@@ -25,35 +21,19 @@
 }
 
 .note-mark, .note-delete {
-    opacity: 0;
-    position: absolute;
-    top: calc(50% - 15px);
-    left: -50px;
-    width: 30px;
-    height: 30px;
-    box-sizing: border-box;
-    border-radius: 50%;
-    border: solid 3px rgba(255, 0, 0, 0.397) ;
+    font: inherit;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid #34495E;
+    border-radius: 27px;
+    margin-left: 10px;
     outline: none;
-    cursor: pointer;
-    transition: ease 0.3s;
-
-    &_marked {
-        background-color: rgba(255, 0, 0, 0.397);
-    }
 }
 
-.note-delete {
-    color: rgba(255, 0, 0, 0.397);
+.button-container {
+    margin-top: 20px;
     display: flex;
-    align-items: center;
-    font-size: 15px;
-    line-height: 15px;
-    letter-spacing: 0.7px;
-    text-transform: uppercase;
-    border: none;
-    background-color: transparent;
-    font-weight: 600;
-    height: 30px;
-    left: calc(100% + 15px);
+    width: 100%;
+    justify-content: flex-end;
 }
