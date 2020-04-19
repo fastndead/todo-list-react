@@ -17,9 +17,9 @@ class Notes extends Component {
       <Transition
         items={this.props.notes}
         keys={(item) => item.id}
-        from={{ height: 0, opacity: 0, transform: 'translate3d(-40px,0,0)' }}
-        enter={{ height: 'auto', opacity: 1, transform: 'translate3d(0,0,0)' }}
-        leave={{ height: 0, opacity: 0, transform: 'translate3d(40px,0,0)' }}
+        from={{ height: 0, opacity: 0 }}
+        enter={{ height: 'auto', opacity: 1}}
+        leave={{ height: 0, opacity: 0 }}
       >
         {(note) => (props) => (
           <div style={props} className="note-wrapper" key={note.id}>
