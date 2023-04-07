@@ -1,7 +1,8 @@
 # Todo List React
 
 This is a simple todo list application built with React.
-<img width="1022" alt="image" src="https://user-images.githubusercontent.com/33729448/230559568-7b38a023-bfc0-471a-8c16-e54a172bc338.png">
+
+![fastndead github io_todo-list-react_](https://user-images.githubusercontent.com/33729448/230559680-36f25e90-f757-4073-aa61-aa3ef79356ea.png)
 
 
 ## Installation
